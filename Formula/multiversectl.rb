@@ -5,13 +5,13 @@
 class Multiversectl < Formula
   desc "Run several complete copies of a multi-repository project side by side on one machine."
   homepage "https://multiversectl.dev/"
-  version "0.0.12"
+  version "0.0.13"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cristiansteib/multiversectl/releases/download/v0.0.12/multiversectl_0.0.12_darwin_amd64.tar.gz"
-      sha256 "d5179fc588eec90e34e0d0fceb3fd5f21da0d596c46d415cb328620fcd98d486"
+      url "https://github.com/cristiansteib/multiversectl/releases/download/v0.0.13/multiversectl_0.0.13_darwin_amd64.tar.gz"
+      sha256 "79db63f2406b8ff03deaaa740df7fe81d83298b9eab04224c1106602cc23a846"
 
       define_method(:install) do
         bin.install "multiversectl"
@@ -20,8 +20,8 @@ class Multiversectl < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cristiansteib/multiversectl/releases/download/v0.0.12/multiversectl_0.0.12_darwin_arm64.tar.gz"
-      sha256 "793b19ea0a729e14169fc3d97ea281bca36a666b92f8142a46a63102c422cd54"
+      url "https://github.com/cristiansteib/multiversectl/releases/download/v0.0.13/multiversectl_0.0.13_darwin_arm64.tar.gz"
+      sha256 "a89608e68b86354e150b244490a1c7865e4e2c0b4b60c7d427508a5ecc5596cd"
 
       define_method(:install) do
         bin.install "multiversectl"
@@ -33,8 +33,8 @@ class Multiversectl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cristiansteib/multiversectl/releases/download/v0.0.12/multiversectl_0.0.12_linux_amd64.tar.gz"
-      sha256 "5f0a10599437fc4baf660b1e67f5cfe7508b92328a6bf1979228b1e39528a2c0"
+      url "https://github.com/cristiansteib/multiversectl/releases/download/v0.0.13/multiversectl_0.0.13_linux_amd64.tar.gz"
+      sha256 "3e1047d0cac629ff765806b9564c82689d6c6317db9593215533cdec8f5de65b"
       define_method(:install) do
         bin.install "multiversectl"
         bin.install "multiversectl-server"
@@ -42,8 +42,8 @@ class Multiversectl < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cristiansteib/multiversectl/releases/download/v0.0.12/multiversectl_0.0.12_linux_arm64.tar.gz"
-      sha256 "ef2400ab4f3b02c83000f6c20979a217371b5e6679358cb30bf0bf5d25c55724"
+      url "https://github.com/cristiansteib/multiversectl/releases/download/v0.0.13/multiversectl_0.0.13_linux_arm64.tar.gz"
+      sha256 "36b8cd6a484ac402daa9c30d4fb808d4ecb633cf2e443dd41df0f67cca7811a6"
       define_method(:install) do
         bin.install "multiversectl"
         bin.install "multiversectl-server"
